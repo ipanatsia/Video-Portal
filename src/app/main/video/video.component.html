@@ -1,0 +1,21 @@
+<div>
+    <div id="title">
+        <p style="display:contents"><a style="margin:auto" [routerLink]="['/details']" [queryParams]="{ videoId: video._id}">{{video.name}}</a></p>
+    </div>
+    
+
+    <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" [src]="this.safeUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </div>
+
+    <div style="display: flex;">
+        <div id="rating">
+            <bar-rating [theme]="'default'" [rate]="this.rating" [max]="5"></bar-rating>
+        </div>
+    </div>
+    
+    <div id="description">
+        <p>{{video.description}}</p>    
+    </div>
+    
+</div>

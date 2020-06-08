@@ -1,0 +1,27 @@
+.embed-responsive{
+    height: 171px;
+}
+
+.video-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  #description {
+    max-height: 200px;
+    overflow: auto;
+    text-align: justify;
+  }
+
+  #rating{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #title{
+    margin:auto;
+    height: 100px; 
+    display:flex;
+    text-align: center;
+  }
+

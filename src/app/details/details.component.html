@@ -1,0 +1,33 @@
+<div class="row mt-5">
+    <div class="col-sm-8 col-12" id="mainVideo">
+        <p class="text-center">{{this.video.name}}</p>
+        <div class="embed-responsive embed-responsive-4by3 main-video">
+            <iframe class="embed-responsive-item" [src]="this.safeUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+        </div>
+        <div style="display: flex;">
+            <div id="rating">
+                <bar-rating [theme]="'default'" [rate]="this.video.ratings" [readOnly]="true" [max]="5"></bar-rating>
+            </div>
+        </div>
+        <p class="text-justify">{{video.description}}</p>
+        <p>{{video.rating}}</p>
+    </div>
+    <div class="col-sm-4 col-12" id="sideBar">
+        <div *ngFor="let video of videosSide" id="side-video">
+            <p class="text-center">{{video.name}}</p>
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" [src]="video.url" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+            </div>
+            <div style="display: flex;">
+                <div id="rating">
+                    <bar-rating [theme]="'default'" [rate]="video.ratings" [readOnly]="true" [max]="5"></bar-rating>
+                </div>
+            </div>
+            <!-- <p>{{video.url}}</p> -->
+            <p class="text-justify">{{video.description}}</p>
+            
+        </div>
+    </div>
+</div>
+
+

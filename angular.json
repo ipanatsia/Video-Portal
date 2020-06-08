@@ -24,9 +24,12 @@
               "src/assets"
             ],
             "styles": [
+			"./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+			"./node_modules/jquery/dist/jquery.js",
+            "./node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
             "production": {
@@ -88,7 +91,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+				"src/styles.css"			  
             ],
             "scripts": []
           }
@@ -108,7 +111,7 @@
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
+         "options": {
             "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "video-portal:serve"
           },
