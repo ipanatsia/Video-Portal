@@ -1,6 +1,6 @@
 ## Project Documentation
 
-This Project is based on MEAN stack and is implemented with Angular, Express and Mongo DB. Initially, the application requires user authentication. User data are stored in tokens and every user can stay logged in for 60 min. In main page, app fetch data from db and shows them. User is able to show every video in details and rate it.
+This Project is based on MEAN stack model and it is implemented with Angular, Express and Mongo DB. Initially, the application requires user authentication. User data are stored in tokens and every user can stay logged in for 60 min. In main page, app fetch data from db and shows them. User is able to show every video in details and rate it.
 
 # VideoPortal
 
